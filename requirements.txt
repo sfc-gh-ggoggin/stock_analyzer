@@ -1,0 +1,8 @@
+streamlit
+yfinance
+requests
+pandas
+vaderSentiment
+groq
+plotly
+python-dotenv
