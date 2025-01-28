@@ -9,9 +9,9 @@ import plotly.graph_objects as go
 from dotenv import load_dotenv
 from datetime import datetime, timedelta
 
-load_dotenv()
-GROQ_API_KEY = os.getenv("GROQ_API_KEY")
-NEWS_API_KEY = os.getenv("NEWS_API_KEY")
+#load_dotenv()
+GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
+NEWS_API_KEY = st.secrets["NEWS_API_KEY"]
 client = Groq(api_key=GROQ_API_KEY)
 
 # use news API to get news articles about the company
